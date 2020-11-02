@@ -1,15 +1,15 @@
-#caption-contest
+# caption-contest
 
 Simple Node/Express API to retrieve and caption photos. Users can view a list of photos, then register to register to leave captions on photos.
 
 This app was initialized with express-generator.
 
-##Running the app
+## Running the app
 To run locally, run `npm install`, then `DEBUG=myapp:* npm start`
 
 Once the app is running locally, you can access the API at `http://localhost:3000/`
 
-##Testing with Swagger
+## Testing with Swagger
 Swagger documentation and testing available at `http://localhost:3000/docs`
 
 To test with Swagger:
@@ -25,7 +25,7 @@ To test with Swagger:
  - Retrieve photos, captions, and user data using other endpoints.
    - endpoints with a Lock icon require a login token
 
-##Resources
+## Resources
 - [NodeJS, Express, Sequelize, PostgreSQL RESTful API](https://www.djamware.com/post/5b56a6cc80aca707dd4f65a9/nodejs-expressjs-sequelizejs-and-postgresql-restful-api)
 - [Handling Auth with Node](https://medium.com/quick-code/handling-authentication-and-authorization-with-node-7f9548fedde8)
 - [Optimize Node with Simple Caching Strategies](https://scotch.io/tutorials/how-to-optimize-node-requests-with-simple-caching-strategies)
