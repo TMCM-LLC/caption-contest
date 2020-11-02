@@ -4,6 +4,31 @@ const config = require('../config/config.json')[env];
 
 const jwt = require('jsonwebtoken');
 
+/**
+ * @swagger
+ *  components:
+ *    schemas:
+ *      User:
+ *        type: object
+ *        required:
+ *          - name
+ *          - email
+ *          - password
+ *        properties:
+ *          name:
+ *            type: string
+ *          email:
+ *            type: string
+ *            format: email
+ *            description: Email for the user, must be unique
+ *          password:
+ *            type: string
+ *            description: Must be between 8 and 20 characters
+ *        example:
+ *           name: Test User
+ *           email: testuser@test.com
+ *           password: p@ssw0rd
+ */
 const {
   Model
 } = require('sequelize');

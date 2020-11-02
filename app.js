@@ -4,7 +4,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const helmet = require('helmet');
-const nodeCache = require( "node-cache" );
 
 const env = process.env.NODE_ENV || 'development';
 const config = require('./config/config.json')[env];

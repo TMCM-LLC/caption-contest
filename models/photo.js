@@ -1,4 +1,28 @@
 'use strict';
+
+/**
+ * @swagger
+ *  components:
+ *    schemas:
+ *      Photo:
+ *        type: object
+ *        required:
+ *          - name
+ *          - url
+ *        properties:
+ *          name:
+ *            type: string
+ *          url:
+ *            type: string
+ *            description: path to image file
+ *          citation:
+ *            type: string
+ *            description: citation for image source
+ *        example:
+ *           name: Sample Photo
+ *           path: /images/sample.jpg
+ *           citation: by Test Photographer
+ */
 const {
   Model
 } = require('sequelize');

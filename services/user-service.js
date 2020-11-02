@@ -13,7 +13,7 @@ module.exports = {
     return User
       .findAll({
         order: [
-          ['id', 'ASC'],ß
+          ['id', 'ASC'],
         ],
         attributes: ['id', 'name', 'email']
       })

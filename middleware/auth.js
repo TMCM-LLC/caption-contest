@@ -9,9 +9,7 @@ module.exports = function(req, res, next) {
   if (!token) return res.status(401).send("Access denied. No token provided.");
 
   try {
-    const stuff = jwt.verify(token, config.privateKey);
-    console.log('STUFF', stuff);
-    req.user = stuff;
+    req.user = jwt.verify(token, config.privateKey);
     next();
   } catch (ex) {
     res.status(400).send("Invalid token.");
