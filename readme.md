@@ -1,6 +1,6 @@
 # caption-contest
 
-Simple Node/Express API to retrieve and caption photos. Users can view a list of photos, then register to register to leave captions on photos.
+Simple Node/Express API to retrieve and caption photos. Users can view a list of photos, then register to leave captions on photos.
 
 This app was initialized with express-generator.
 
@@ -33,3 +33,8 @@ To test with Swagger:
 - [Swagger Specification](https://swagger.io/docs/specification/basic-structure/)
 
 Photos included in the source code of this project are from [Comedy Wildlife Photos](https://www.comedywildlifephoto.com/gallery/comedy-widlife-2020-competition-winners.php).
+
+## Options for extension
+- Implement admin role for users, capable of curating photos and managing users
+- Create web front-end
+- Implement voting feature for ranking captions
