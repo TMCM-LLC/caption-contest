@@ -14,7 +14,7 @@ module.exports = {
       url: {
         type: Sequelize.STRING
       },
-      criteria: {
+      citation: {
         type: Sequelize.STRING
       },
       createdAt: {
