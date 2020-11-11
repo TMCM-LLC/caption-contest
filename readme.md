@@ -4,8 +4,33 @@ Simple Node/Express API to retrieve and caption photos. Users can view a list of
 
 This app was initialized with express-generator.
 
-## Running the app
-To run locally, run `npm install`, then `DEBUG=myapp:* npm start`
+## Dependencies
+- NPM
+- NodeJS/Express.js
+- PostgreSQL Server
+- Sequelize
+
+## Running the app locally
+Install project dependencies using `npm install`
+
+Before you can run the project locally, you will need to setup the database:
+```
+psql postgres --u postgres
+
+postgres-# CREATE ROLE root WITH LOGIN PASSWORD 'p@ssw0rd!';
+postgres-# ALTER ROLE root CREATEDB;
+postgres-# \q
+
+psql postgres -U root
+
+postgres=> CREATE DATABASE node_sequelize;
+postgres=> GRANT ALL PRIVILEGES ON DATABASE node_sequelize TO root;
+postgres=> \q
+```
+
+Run the Sequelize migration scripts using `sequelize db:migrate`
+
+You can then run the project with `DEBUG=myapp:* npm start`
 
 Once the app is running locally, you can access the API at `http://localhost:3000/`
 
